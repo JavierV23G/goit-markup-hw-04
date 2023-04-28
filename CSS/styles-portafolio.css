@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --color-azul: #2196F3;
+    --color-texto: #212121;
+    --color-gris: #757575;
+    --color-hueso: #FFFFFF;
+    --color-botones: #F5F4FA;
+    --color-footpage: #2F303A;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-texto);
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0px 0px;
+    padding: 47px 0px;
+    width: 1600px;
+}
+
+.top-container {
+    width: 1600px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.top-container .container .navigation {
+    display: flex;
+    padding: 0px 0px;
+    margin: 0px 0px 0px 93px;
+    width: 281px;
+    justify-content: space-between;
+}
+
+.top-container .container .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0px 0px 0px 344px;
+    padding: 0px 0px;
+}
+
+.webstudio,
+.foot-info .webstudio {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-style: bold;
+    line-height: 1.2;
+    color: var(--color-azul);
+}
+
+.foot-page .find-us p {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--color-hueso);
+    width: 300px;
+}
+
+.main-content .images p {
+    font-weight: 700;
+    font-size: 18px;
+    font-style: bold;
+    line-height: 1;
+    margin: 0px 0px;
+    padding: 20px 24px 10px 24px;
+}
+
+.main-content .images a {
+    font-size: 16px;
+    line-height: 1.9;
+    font-style: medium;
+    color: var(--color-gris);
+    padding: 20px 24px 20px 24px;
+}
+
+.main-content .images li {
+    background-color: var(--color-hueso);
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+    border-bottom: 1px;
+}
+
+.estudio,
+.contactos,
+.portafolio {
+    font-weight: 500;
+    font-style: medium;
+    line-height: 1.2;
+}
+
+.estudio:hover,
+.contactos:hover,
+.portafolio:hover,
+.estudio:focus,
+.contactos:focus,
+.porafolio:focus {
+    color: var(--color-azul);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.contact a {
+    color: var(--color-gris);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.main-content button {
+    background-color: var(--color-botones);
+    font-size: 16px;
+    font-style: medium;
+    line-height: 1.6;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 24px;
+}
+
+.main-content button:hover,
+.main-content button:focus {
+    background-color: var(--color-azul);
+    color: var(--color-hueso);
+    font-style: medium;
+    line-height: 1.6;
+    padding: 6px 24px;
+    width: auto;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.main-content {
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.main-content .container {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1360px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    flex-direction: column;
+}
+
+.main-content .container .images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content .container .buttons {
+    display: flex;
+    width: 611px;
+    height: 54px;
+    padding: 0px 0px;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.contact a:hover,
+.foot-info a:hover {
+    color: var(--color-azul);
+}
+
+.foot-page {
+    display: flex;
+    background-color: var(--color-footpage);
+    width: 1600px;
+    height: 252px;
+    padding: 0px 0px;
+    margin: 0 auto;
+}
+
+.foot-page .container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.foot-page ul {
+    margin: 60px 70px 47px 0px; 
+    padding: 0px 0px;
+    width: 231px;
+    height: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 24px;
+}
+
+.foot-info .webstudio {
+    margin-bottom: 20px;
+}
+
+.foot-info li a  {
+    color: var(--color-hueso);
+    line-height: 1.7;
+    opacity: 60%;
+}
+
+.foot-info address {
+    color: var(--color-hueso);
+    line-height: 1.7;
+    font-style: normal;
+}
+
+.foot-page .container .find-us li {
+    margin-bottom: 143px;
+}
