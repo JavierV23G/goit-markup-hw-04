@@ -100,6 +100,7 @@ nav {
 
 .main-title {
     background-color: var(--color-behindpage);
+    background-image: url(Imagenes/images-index/backgroung-title.jpg);
 }
 
 .main-title .container {
