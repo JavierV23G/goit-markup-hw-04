@@ -101,6 +101,7 @@ nav {
 .main-title {
     background-color: var(--color-behindpage);
     background-image: url(Imagenes/images-index/backgroung-title.jpg);
+    background-repeat: no;
 }
 
 .main-title .container {
@@ -151,6 +152,12 @@ nav {
 
 .content1 ul .text {
     width: 270px;
+}
+
+.content1 .svg li {
+    background-color: var(--color-behindourteam) ;
+    width: 270px;
+    height: 120px;
 }
 
 .content2 h2,
