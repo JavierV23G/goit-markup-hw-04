@@ -7,7 +7,7 @@
     --color-hueso: #FFFFFF;
     --color-behindpage: #2F303A;
     --color-behindourteam: #F5F4FA;
-
+    --color-linkitems: #AFB1B8;
     --lineweight-normal: 1.2;
 }
 
@@ -30,12 +30,18 @@ section {
     height: 80px;
     padding: 0px 0px;
     align-items: center;
-    justify-content: center;
     display: flex;
-}
+    width: 1600px;
+}  
 
-nav {
+.top-page .container {
+    display:flex;
     width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+nav {
+    width: 519px;
     display: flex;
     align-items: center;
 }
@@ -51,9 +57,23 @@ nav {
 .top-page .container .contact {
     display: flex;
     justify-content: space-between;
-    width: 295px;
+    width: 300px;
     margin: 0px 0px 0px 344px;
     padding: 0px 0px;
+}
+
+.email,
+.celphone {
+    display: flex;
+    align-items: center;
+}
+
+.top-page .container .icon {
+    width: 35px;
+    height: 35px;
+    stroke-width: 0;
+    align-self: flex-start;
+    fill: var(--color-gris)
 }
 
 .webstudio,
@@ -98,6 +118,8 @@ nav {
     line-height: var(--lineweight-normal);
 }
 
+/* TITLE WEBSITE */
+
 .main-title {
     background-color: var(--color-behindpage);
     background-image: url(Imagenes/images-index/backgroung-title.jpg);
@@ -132,6 +154,8 @@ nav {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* DESCRIPTIONS */
+
 .content1 h3 {
     font-weight: 700;
     line-height: var(--lineweight-normal);
@@ -160,13 +184,19 @@ nav {
     height: 120px;
 }
 
+/* A QUE NOS DEDICAMOS */
+
 .content2 h2,
-.content3 h2 {
+.content3 h2,
+.content4 h2 
+{
     font-size: 36px;
     font-style: bold;
     font-weight: 700;
     line-height: var(--lineweight-normal);
+    margin: 0 auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .content2 {
@@ -180,43 +210,101 @@ nav {
     justify-content: space-between;
 }
     
-.content3 .character {
-    background-color: #FFFFFF;
-    width: 270px;
-    height: 368px;
-}
-
+/* OUR TEAM */
 .content3 {
     background-color: var(--color-behindourteam);
 }
 
-.content3 .container ul{
-    display: flex;
+.content3 .container {
+    margin: 0 auto;
     width: 1200px;
+}
+
+.content3 .container ul {
+    display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px
 }
 
-.content3 h2 {
-    margin: 0 auto;
-    margin-bottom: 50px;
+.content3 .container .card {
+    width: 270px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    background-color: var(--color-hueso);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.content3 .character h4 {
+.content3 .container ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: var(--lineweight-normal);
-    text-align: center;
-}
+    line-height: 19px;
+    margin-bottom: 10px;
+    }
 
-.content3 .character p {
+.card p {
+    margin-top: 0px;
+    font-size: 16px;
     color: var(--color-gris);
-    line-height: var(--lineweight-normal);
-    text-align: center;
+    line-height: 19px;
 }
 
+.svg-container {
+    margin: 0 auto;
+    padding: 0px;
+}
+.svg-container ul {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
+}
+
+.link-icon {
+    width: 44px;
+    height: 44px;
+    stroke-width: 0;
+    fill: var(--color-linkitems);
+}
+
+/* CLIENTES REGULARES */
+.content4 .container {
+    margin: 0 auto;
+    padding: 0px;
+    width: 1200px;
+}
+
+.content4 .container ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client {
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid var(--color-linkitems);
+}
+
+.client-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 60px;
+    fill: var(--color-linkitems);
+}
+
+/* FOOT PAGE */
 .foot-page {
     display: flex;
     background-color: var(--color-behindpage);
