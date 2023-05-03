@@ -23,24 +23,31 @@ section {
     width: 1600px;
 }
 
-.top-container {
-    width: 1600px;
+/* TOP WEBSITE */
+
+.top-page {
     height: 80px;
-    margin: 0 auto;
     padding: 0px 0px;
     align-items: center;
-    justify-content: center;
     display: flex;
+    width: 1600px;
     border-bottom: 1px solid #ECECEC;
 }
 
-nav {
+.top-page .container {
+    display: flex;
     width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav {
+    width: 519px;
     display: flex;
     align-items: center;
 }
 
-.top-container .container .navigation {
+.top-page .container .navigation {
     display: flex;
     padding: 0px 0px;
     margin: 0px 0px 0px 93px;
@@ -48,12 +55,36 @@ nav {
     justify-content: space-between;
 }
 
-.top-container .container .contact {
+.top-page .container .contact {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    align-items: center;
+    width: 340px;
+    height: 16px;
     margin: 0px 0px 0px 344px;
     padding: 0px 0px;
+}
+
+.contact .email {
+    display: flex;
+    justify-content: space-between;
+    width: 161px;
+    height: 16px;
+}
+
+.contact .celphone {
+    display: flex;
+    justify-content: space-between;
+    width: 138px;
+    height: 16px;
+}
+
+.top-page .container .icon {
+    width: 20px;
+    height: 16px;
+    stroke-width: 0;
+    align-items: center;
+    fill: var(--color-gris)
 }
 
 .webstudio,
@@ -61,18 +92,51 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-style: bold;
-    line-height: 1.2;
+    line-height: var(--lineweight-normal);
     color: var(--color-azul);
 }
 
-.foot-page .find-us p {
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: var(--color-hueso);
-    width: 300px;
+.estudio,
+.contactos,
+.portafolio {
+    font-weight: 500;
+    font-style: medium;
+    line-height: var(--lineweight-normal);
 }
+
+.portafolio {
+    color: var(--color-azul);
+}
+
+.estudio:hover,
+.contactos:hover,
+.estudio:focus,
+.contactos:focus {
+    color: var(--color-azul);
+    font-weight: 500;
+    line-height: var(--lineweight-normal);
+}
+
+.contact a {
+    color: var(--color-gris);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--lineweight-normal);
+}
+
+.top-page .contact .email .icon:hover,
+.top-page .contact .email a:hover,
+.top-page .contact .celphone a:hover {
+    color: var(--color-azul);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--lineweight-normal);
+    fill: var(--color-azul);
+    color: var(--color-azul);
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
 
 .main-content .images p {
     font-weight: 700;
@@ -96,32 +160,12 @@ nav {
     width: 370px;
     height: 404px;
     margin-bottom: 30px;
-    border-bottom: 1px;
+    border: 1px solid rgba(238, 238, 238, 1);
 }
 
-.estudio,
-.contactos,
-.portafolio {
-    font-weight: 500;
-    font-style: medium;
-    line-height: 1.2;
-}
-
-.estudio:hover,
-.contactos:hover,
-.portafolio:hover,
-.estudio:focus,
-.contactos:focus,
-.porafolio:focus {
-    color: var(--color-azul);
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.contact a {
-    color: var(--color-gris);
-    font-weight: 500;
-    line-height: 1.2;
+.main-content .images li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .main-content button {
@@ -190,13 +234,14 @@ nav {
     color: var(--color-azul);
 }
 
+/* FOOTER */
+
 .foot-page {
     display: flex;
     background-color: var(--color-footpage);
     width: 1600px;
     height: 252px;
     padding: 0px 0px;
-    margin: 0 auto;
 }
 
 .foot-page .container {
@@ -205,8 +250,8 @@ nav {
     margin: 0 auto;
 }
 
-.foot-page ul {
-    margin: 60px 70px 47px 0px; 
+.foot-page .foot-info {
+    margin: 60px 70px 47px 0px;
     padding: 0px 0px;
     width: 231px;
     height: 145px;
@@ -220,7 +265,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.foot-info li a  {
+.foot-info li a {
     color: var(--color-hueso);
     line-height: 1.7;
     opacity: 60%;
@@ -232,6 +277,56 @@ nav {
     font-style: normal;
 }
 
-.foot-page .container .find-us li {
-    margin-bottom: 143px;
+.foot-page .find-us {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+    margin: 72px 0px 100px 0px;
+    justify-content: space-between;
+}
+
+.foot-page .find-us .text-findus,
+.foot-page .find-us .social-container {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.foot-page .find-us p {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--color-hueso);
+    margin: 0px 0px;
+}
+
+.social-container {
+    width: 206px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.behind-icon-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+}
+
+.foot-icon {
+    width: 44px;
+    height: 44px;
+    fill: var(--color-hueso);
+    align-items: left;
+}
+
+.behind-icon-footer:hover {
+    background-color: var(--color-azul);
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
 }

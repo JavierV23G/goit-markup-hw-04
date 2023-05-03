@@ -17,10 +17,11 @@
 
   <body>
     <header>
-      <section class="top-container">
+      <section class="top-page">
         <div class="container">
           <nav>
-            <a class="webstudio" href="#" target="_self">WebStudio</a>
+            <a class="webstudio" href="#" target="_blank">WebStudio</a>
+
             <ul class="navigation">
               <li>
                 <a class="estudio" href="index.html" target="_self">Estudio</a>
@@ -34,15 +35,26 @@
                 <a class="contactos" href="#" target="_blank">Contactos</a>
               </li>
             </ul>
-            <ul class="contact">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+525555296000">+52 55 5529 6000</a>
-              </li>
-            </ul>
           </nav>
+
+          <ul class="contact">
+            <li>
+              <div class="email">
+                <svg class="icon">
+                  <use href="Imagenes/SVG/sprite.svg#sobre"></use>
+                </svg>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="celphone">
+                <svg class="icon">
+                  <use href="Imagenes/SVG/sprite.svg#celular"></use>
+                </svg>
+                <a href="tel:+525555296000">+52 55 5529 6000</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </header>
@@ -173,18 +185,42 @@
                 Calz. Ticomán 500, Ciudad de México, CDMX, México
               </address>
             </li>
-            <li class="phone">
+            <li class="foot-email">
               <a href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="email">
+            <li class="phone">
               <a href="tel:+525555296000">+52 55 5529 6000</a>
             </li>
           </ul>
-          <ul class="find-us">
-            <li>
-              <p>ENCUENTRANOS EN</p>
-            </li>
-          </ul>
+          <div class="find-us">
+            <ul class="text-findus">
+              <li>
+                <p>ENCUENTRANOS EN</p>
+              </li>
+            </ul>
+            <ul class="social-container">
+              <li class="behind-icon-footer">
+                <svg class="foot-icon">
+                  <use href="Imagenes/SVG/sprite.svg#instagram"></use>
+                </svg>
+              </li>
+              <li class="behind-icon-footer">
+                <svg class="foot-icon">
+                  <use href="Imagenes/SVG/sprite.svg#twitter"></use>
+                </svg>
+              </li>
+              <li class="behind-icon-footer">
+                <svg class="foot-icon">
+                  <use href="Imagenes/SVG/sprite.svg#facebook"></use>
+                </svg>
+              </li>
+              <li class="behind-icon-footer">
+                <svg class="foot-icon">
+                  <use href="Imagenes/SVG/sprite.svg#linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </footer>
