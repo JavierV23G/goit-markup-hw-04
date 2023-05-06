@@ -24,7 +24,6 @@ section {
     padding: 47px 0px;
     width: 1600px;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
 .top-page {
@@ -372,6 +371,7 @@ nav {
     stroke: currentColor;
     stroke-width: 0;
     width: 170px;
+    height: 81px;
     fill: var(--color-linkitems);
 }
 
