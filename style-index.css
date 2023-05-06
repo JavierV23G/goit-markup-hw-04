@@ -22,8 +22,7 @@
 section {
     margin: 0px 0px;
     padding: 47px 0px;
-    width: 1600px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .top-page {
@@ -31,8 +30,7 @@ section {
     padding: 0px 0px;
     align-items: center;
     display: flex;
-    width: 1600px;
-}  
+}
 
 .top-page .container {
     display:flex;
@@ -388,7 +386,6 @@ nav {
 .foot-page {
     display: flex;
     background-color: var(--color-behindpage);
-    width: 1600px;
     padding: 0px 0px;
 }
 
