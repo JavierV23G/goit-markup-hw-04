@@ -351,13 +351,17 @@ nav {
     cursor: pointer;
 }
 
-.content4 .container ul {
-    display: flex;
-    gap: 30px;
+.content4 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0px;
     align-items: center;
+}
+
+.content4 .container ul {
+    display: flex;
+    gap: 30px;
+    padding: 0px;
 }
 
 .content4 .container ul li {
