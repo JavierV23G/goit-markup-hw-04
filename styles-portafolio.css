@@ -37,7 +37,10 @@ section {
 .top-page .container {
     display: flex;
     width: 1200px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
 }
 
@@ -247,7 +250,10 @@ nav {
 .foot-page .container {
     width: 1200px;
     display: flex;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .foot-page .foot-info {

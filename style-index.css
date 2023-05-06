@@ -24,6 +24,7 @@ section {
     padding: 47px 0px;
     width: 1600px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .top-page {
@@ -37,7 +38,8 @@ section {
 .top-page .container {
     display:flex;
     width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
 }
 nav {
@@ -162,6 +164,7 @@ nav {
     color: var(--color-hueso);
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.8;
     cursor: pointer;
     width: 261px;
     height: 50px;
@@ -179,25 +182,27 @@ nav {
 
 .content1 p {
     color: var(--color-gris);
-    line-height: 24px;
+    line-height: var(--lineweight-normal);
 }
 
-.content1 ul {
+.content1 .container ul {
     display: flex;
     margin: 0 auto;
     width: 1200px;
     padding: 0px;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-.content1 ul .text {
+.content1 .text-content1 li {
     width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
-.content1 .svg li {
+.content1 .svg-content1 li svg{
     background-color: var(--color-behindourteam) ;
     width: 270px;
     height: 120px;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 /* A QUE NOS DEDICAMOS */
@@ -218,14 +223,22 @@ nav {
 .content2 {
     padding: 0px 0px 47px 0px;
 }
-.content2 .container ul {
-    display: flex;
+
+.content2 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0px;
-    justify-content: space-between;
 }
 
+.content2 .container ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
+}
+
+.content2 .container ul li {
+    flex-basis: calc((100% - 60px) / 3);
+}
 /* .content2 .container .text-image-content2 li {
     background-color: #2F303A;
     width: 373px;
@@ -262,8 +275,9 @@ nav {
 
 .content3 .container ul {
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
 }
 
 .content3 .container .card {
@@ -276,17 +290,13 @@ nav {
     background-color: var(--color-hueso);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.content3 .container ul {
-    padding: 0px;
-    margin: 0px;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .card h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.12;
     margin-bottom: 10px;
     }
 
@@ -294,18 +304,17 @@ nav {
     margin-top: 0px;
     font-size: 16px;
     color: var(--color-gris);
-    line-height: 19px;
+    line-height: 1.12;
 }
 
 .svg-container {
     margin: 0 auto;
     padding: 0px;
 }
-.svg-container ul {
+.content3 .svg-container ul {
     display: flex;
     width: 206px;
-    height: 44px;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .link-icon  {
@@ -313,6 +322,7 @@ nav {
     height: 44px;
     stroke-width: 0;
     fill: var(--color-linkitems);
+    flex-basis: calc((100% - 30px) / 4);
 }
 
 .link-icon:hover {
@@ -329,6 +339,7 @@ nav {
 }
 
 /* CLIENTES REGULARES */
+
 .content4 .container .client {
     width: 170px;
     height: 81px;
@@ -343,11 +354,15 @@ nav {
 
 .content4 .container ul {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     width: 1200px;
     margin: 0 auto;
     padding: 0px;
     align-items: center;
+}
+
+.content4 .container ul li {
+    flex-basis: calc((100% - 150px) / 6);
 }
 
 .client-svg {
@@ -357,7 +372,6 @@ nav {
     stroke: currentColor;
     stroke-width: 0;
     width: 170px;
-    height: 81px;
     fill: var(--color-linkitems);
 }
 
@@ -371,25 +385,24 @@ nav {
     display: flex;
     background-color: var(--color-behindpage);
     width: 1600px;
-    height: 252px;
     padding: 0px 0px;
 }
 
 .foot-page .container {
     width: 1200px;
     display: flex;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .foot-page .foot-info  {
     margin: 60px 70px 47px 0px;
     padding: 0px 0px;
     width: 231px;
-    height: 145px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    line-height: 24px;
+    line-height: 1.7;
 }
 
 .foot-info .webstudio {
@@ -412,9 +425,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 206px;
-    height: 80px;
     margin: 72px 0px 100px 0px;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .foot-page .find-us .text-findus,
@@ -426,7 +438,6 @@ nav {
 .foot-page .find-us p {
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--color-hueso);
     margin: 0px 0px;
@@ -436,7 +447,7 @@ nav {
     width: 206px;
     height: 44px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
 }
 
@@ -449,8 +460,8 @@ nav {
 
 .foot-icon {
     width: 44px;
-    height: 44px;
     fill: var(--color-hueso);
     align-items: left;
+    flex-basis: calc((100% - 30px) / 4);
 }
 
