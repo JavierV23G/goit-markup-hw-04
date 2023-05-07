@@ -138,7 +138,8 @@ nav {
 .main-title {
     background-color: var(--color-behindpage);
     background-image: url(Imagenes/images-index/backgroung-title.jpg);
-    background-repeat: no;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-title .container {
@@ -193,13 +194,13 @@ nav {
 .content1 .text-content1 li {
     width: 270px;
     flex-basis: calc((100% - 90px) / 4);
+    margin:0px
 }
 
-.content1 .svg-content1 li svg{
+.content1 .text-content1 li a svg{
     background-color: var(--color-behindourteam) ;
     width: 270px;
     height: 120px;
-    flex-basis: calc((100% - 90px) / 4);
 }
 
 /* A QUE NOS DEDICAMOS */
@@ -236,14 +237,17 @@ nav {
 .content2 .container ul li {
     flex-basis: calc((100% - 60px) / 3);
 }
-/* .content2 .container .text-image-content2 li {
-    background-color: #2F303A;
+
+.content2 .container .text-image-content2 li {
+    background-color: #2F303ACC;
     width: 373px;
     height: 70px;
     display: flex;
     margin: 0px;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 73.3px;
 }
 
 .content2 .container .text-image-content2 h3 {
@@ -258,7 +262,7 @@ nav {
     color: rgba(255, 255, 255, 1);
     width: 212px;
     height: 16px;
-} */
+}
     
 /* OUR TEAM */
 .content3 {
