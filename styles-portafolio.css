@@ -17,12 +17,6 @@
     box-sizing: border-box;
 }
 
-section {
-    margin: 0px 0px;
-    padding: 47px 0px;
-    width: 100%;
-}
-
 /* TOP WEBSITE */
 
 .top-page {
@@ -254,6 +248,7 @@ nav {
     background-color: var(--color-footpage);
     height: 252px;
     padding: 0px 0px;
+    margin-bottom: 0px;
 }
 
 .foot-page .container {
