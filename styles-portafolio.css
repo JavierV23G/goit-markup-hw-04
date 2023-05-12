@@ -17,6 +17,12 @@
     box-sizing: border-box;
 }
 
+section {
+    margin: 0px 0px;
+    padding: 47px 0px;
+    width: 100%;
+}
+
 /* TOP WEBSITE */
 
 .top-page {
@@ -53,7 +59,7 @@ nav {
 
 .top-page .container .contact {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
     width: 340px;
     height: 16px;
@@ -61,18 +67,39 @@ nav {
     padding: 0px 0px;
 }
 
+.top-page .container .contact li {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.top-page .container .contact li a {
+    flex-basis: calc((100% - 10px) / 2);
+}
+
 .contact .email {
     display: flex;
-    justify-content: space-between;
-    width: 161px;
+    align-items: center;
+    width: 151px;
     height: 16px;
 }
 
 .contact .celphone {
     display: flex;
-    justify-content: space-between;
-    width: 138px;
+    align-items: center;
+    width: 135px;
     height: 16px;
+}
+
+.contact li a:hover {
+    color: var(--color-azul);
+    cursor: pointer;
+    fill: var(--color-azul);
+}
+
+.contact p {
+    color: var(--color-gris);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--lineweight-normal);
 }
 
 .top-page .container .icon {
@@ -118,18 +145,6 @@ nav {
     font-weight: 500;
     font-size: 14px;
     line-height: var(--lineweight-normal);
-}
-
-.top-page .contact .email .icon:hover,
-.top-page .contact .email a:hover,
-.top-page .contact .celphone a:hover {
-    color: var(--color-azul);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: var(--lineweight-normal);
-    fill: var(--color-azul);
-    color: var(--color-azul);
-    cursor: pointer;
 }
 
 /* MAIN CONTENT */
