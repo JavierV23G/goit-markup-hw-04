@@ -17,12 +17,6 @@
     box-sizing: border-box;
 }
 
-section {
-    margin: 0px 0px;
-    padding: 47px 0px;
-    width: 100%;
-}
-
 /* TOP WEBSITE */
 
 .top-page {
@@ -209,7 +203,8 @@ nav {
 
 .main-content {
     display: flex;
-    margin: 0 auto;
+    padding: 47px 0px;
+    margin: 0px 0px;
 }
 
 .main-content .container {

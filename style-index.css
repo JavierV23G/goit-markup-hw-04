@@ -19,12 +19,6 @@
     box-sizing: border-box;
 }
 
-section {
-    margin: 0px 0px;
-    padding: 47px 0px;
-    width: 100%;
-}
-
 .top-page {
     height: 80px;
     padding: 0px 0px;
@@ -147,6 +141,8 @@ nav {
     background-image: url(Imagenes/images-index/backgroung-title.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    padding: 47px 0px;
+    margin: 0px 0px
 }
 
 .main-title .container {
@@ -180,6 +176,10 @@ nav {
 
 /* DESCRIPTIONS */
 
+.content1 {
+    padding: 47px 0px;
+    margin: 0px 0px;
+}
 .content1 h3 {
     font-weight: 700;
     line-height: var(--lineweight-normal);
@@ -223,10 +223,6 @@ nav {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
-}
-
-.content2 {
-    padding: 0px 0px 47px 0px;
 }
 
 .content2 .container {
@@ -274,6 +270,8 @@ nav {
 /* OUR TEAM */
 .content3 {
     background-color: var(--color-behindourteam);
+    padding: 45px 0px;
+    margin: 0px 0px;
 }
 
 .content3 .container {
@@ -347,7 +345,10 @@ nav {
 }
 
 /* CLIENTES REGULARES */
-
+.content4 {
+    padding: 47px 0px;
+    margin: 0px 0px;
+}
 .content4 .container .client {
     width: 170px;
     height: 81px;
@@ -398,6 +399,7 @@ nav {
     display: flex;
     background-color: var(--color-behindpage);
     padding: 0px 0px;
+    margin: 0px 0px; 
 }
 
 .foot-page .container {
